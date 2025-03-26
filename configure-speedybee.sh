@@ -1,0 +1,29 @@
+#!/bin/bash
+./waf configure --board speedybeef4v3 \
+--disable-MSP_BARO \
+--disable-RUNCAM \
+--disable-AK09916 \
+--disable-ICM20948 \
+--disable-BMM150 \
+--disable-HMC5843 \
+--disable-IST8308 \
+--disable-LIS3MDL \
+--disable-MMC3416 \
+--disable-RM3100 \
+--enable-MODE_GUIDED_NOGPS \
+--disable-FENCEPOINT_PROTOCOL \
+--disable-MSP_COMPASS \
+--disable-MSP_DISPLAYPORT \
+--disable-MSP_RANGEFINDER \
+--enable-OSD_EXTENDED_LINK_STATS \
+--enable-PLUSCODE \
+--enable-SCRIPTING \
+--disable-RANGEFINDER \
+--disable-AC_AVOID \
+--disable-FENCE \
+--disable-PARACHUTE \
+--disable-AIRSPEED \
+--disable-SPEKTRUM \
+--disable-HEXA \
+--disable-OCTA \
+-vvv

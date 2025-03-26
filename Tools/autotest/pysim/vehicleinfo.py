@@ -150,6 +150,20 @@ class VehicleInfo(object):
                                             "default_params/airsim-quadX-tema.parm"],
                 "external": True,
             },
+            "airsim-copter-tema7": {
+                "waf_target": "bin/arducopter",
+                "default_params_filename": ["default_params/copter.parm",
+                                            "default_params/airsim-quadX-tema.parm",
+                                            "default_params/airsim-quadX-tema7.parm"],
+                "external": True,
+            },  
+            "airsim-copter-tema7035": {
+                "waf_target": "bin/arducopter",
+                "default_params_filename": ["default_params/copter.parm",
+                                            "default_params/airsim-quadX-tema.parm",
+                                            "default_params/airsim-quadX-tema7035.parm"],
+                "external": True,
+            },
             # HELICOPTER
             "heli": {
                 "waf_target": "bin/arducopter-heli",

@@ -65,9 +65,9 @@ void AP_OSD_SITL::load_font(void)
                 sf::Uint8 *p = &pixels[(y*char_width+x)*4];
                 switch (v) {
                 case 0:
-                    p[0] = 0;
-                    p[1] = 0;
-                    p[2] = 0;
+                    p[0] = 20;
+                    p[1] = 20;
+                    p[2] = 20;
                     p[3] = 255;
                     break;
                 case 1:

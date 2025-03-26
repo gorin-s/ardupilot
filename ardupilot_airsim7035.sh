@@ -1,5 +1,5 @@
 #!/bin/bash
-SIM_VEHICLE=airsim-copter-tema
+SIM_VEHICLE=airsim-copter-tema7035
 UART_ERLS=/dev/ttyUSB0
 while getopts ':w' opt; do
     case "$opt" in
@@ -22,4 +22,4 @@ if [ ! -e $UART_ERLS ]; then
     echo "You may also want to use --auto-attach option to skip this step in future"
     sleep 5
 fi
-sim_vehicle.py -v ArduCopter -f $SIM_VEHICLE $REINIT_SITL --sim-address=$WSL_HOST_IP -A "--serial5=uart:$UART_ERLS:420000" --out=udp:$WSL_HOST_IP:14550 --out=udp:$WSL_HOST_IP:14552 
+sim_vehicle.py -v ArduCopter -f $SIM_VEHICLE $REINIT_SITL --sim-address=$WSL_HOST_IP -A "--serial5=uart:$UART_ERLS:420000" --out=udp:$WSL_HOST_IP:14550 --out=udp:$WSL_HOST_IP:14552 --osd
